@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Space+Grotesk:wght@341&family=Work+Sans:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  background:  rgba(216,216,216,.3);
+  
+}
+
+.showcase-font{
+  margin-left: 130px;
+  margin-top: 20px;
+  font-size: 62px;
+  font-weight: 300;
+  font-family: 'Space Grotesk';
+  padding: 3px;
+}
+
+.showcase-font .sneaker{
+  margin-top: -1rem;
+}
+
+.showcase-font .sprinter{
+  padding-left: 50px;
+  margin-top: -1rem;
+  color: #dc3433;
+}
+
+.showcase-font .collection{
+  padding-left: 50px;
+  margin-top: -1rem;
+}
+
+.paragraph{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 550;
+  margin-top: 50px;
+  margin-left: 160px;
+}
+
+.parallax{
+  background-image: url('img/circle.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.flex-content{
+  margin-left: 90px;
+}
+
+.flex-image{
+  margin-left: -50px;
+}
+
+.flex-content-p-2{
+  width: 110%;
+}
+
+.flex-content-p-3{
+  width: 140%;
+}
+
+.content-3{
+  margin-left: -50px;
+}
+
+.swiper{
+  margin-top: 50px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.span{
+  margin-right: 5px;
+  padding: 4px;
+}
+
+.pic2 img{
+  height: 530px;
+}
+
+.rotate{
+  background: red;
+  animation: mymove 8s infinite;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes mymove {
+
+  50%{
+    transform: translate3d(7px, -7px, 0px);
+  }
+ 
+}
+
+.featureImage{
+  width: 398px;
+  height: 266px;
+  margin-right: 60px;
+  position: sticky;
+  top: 130px;
+  background: url('./img/model-2.webp') no-repeat center center/cover;
+  /*z-index: -1; */
+}
+
+.default{
+    color: #ffffff
+}
+
+.default.gray{
+  color: #555;
+}
+
+.our-story{
+  font-size: 60px;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  -webkit-text-stroke-color: #ffffff;
+  -webkit-text-stroke-width: 0.1rem
+}
+
+.we-stand{
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.in-what-we{
+  font-size: 90px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: -150px;
+  font-weight: 400;
+  margin-top: -50px;
+  margin-bottom: -40px;
+  color: #ffffff;
+}
+
+.stand-for{
+  font-size: 90px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: -105px;
+  font-weight: 400;
+  margin-top: -50px;
+  margin-bottom: -40px;
+  color: #dc3433;
+}
+
+.paragraph{
+  margin-top: 40px;
+  display: flex;
+  width:60%;
+  margin-left: 55px;
+  justify-content: left;
+  color: #1b1b1b;
+  align-items: center;
+}
+
+.ceo-image{
+  width: 603px;
+  height: 606px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+   50%{
+     transform: translateY(20px) ;
+   }
+}
+
+.the{
+  font-size: 65px;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: -25px;
+}
+
+.founder{
+   font-size: 65px;
+   font-weight: 400;
+   color: #ffffff;
+   margin-top: -40px;
+   margin-left: 70px;
+}
+
+.nick{
+  font-size: 65px;
+  color: #dc3433;
+  font-weight: 400;
+  margin-top: -40px;
+  margin-bottom: -25px;
+    
+}
+
+.unis{
+  font-size: 65px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: -40px;
+  color: #dc3433;
+  margin-left: 70px;
+}
+
+.ceo-story{
+  color: #fff;
+  width: 100%;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.failed{
+  color: #dc3433;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.white-shoe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.storyParagraph{
+  color: #fff;
+  margin: auto;
+  display: flex;
+  width: 50%;
+  font-size: 14px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
