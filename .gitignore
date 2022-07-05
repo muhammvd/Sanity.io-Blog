@@ -5,8 +5,6 @@ node_modules
 /.pnp
 .pnp.js
 
-*.html linguist-detectable=false
-
 # testing
 /coverage
 
