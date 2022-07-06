@@ -44,7 +44,9 @@ const Blog = () => {
         <h1 style={{fontSize: '55px', fontWeight: '700', color: '#1b1b1b'}}>UNIS BLOG</h1>
        <p style={{color: '#1b1b1b',fontWeight: '500'}}>Stay Updated on our new releases and other industry buzz.</p>
     </Showcase>
-    <h2>You are viewing {posts.length} posts</h2>
+    <h2>You are viewing {posts.map((post)=>
+      console.log(post)
+    )} posts</h2>
     </Container>
   )
 }

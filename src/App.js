@@ -9,15 +9,16 @@ import Shoes from './components/Shoes.js'
 import About from './components/About';
 import Footer from './components/Footer';
 import Blog from './components/Blog';
+import SinglePost from './components/SinglePost'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 const App = () => {
   return (
-    <Router>
     <div className="container">
       <Routes>
         <Route
-          path='/'
+         index
+          path='/' 
           element={
           <>
           <Header/>
@@ -30,17 +31,16 @@ const App = () => {
           <Shoes />
           <Footer />
           </>
-          }
-          />
+          } />
       </Routes>
      <Routes>
-      <Route path='about' element={<About />} />
+      <Route path='/about' element={<About />} />
      </Routes>
      <Routes>
-       <Route path='blog' element={<Blog />} />
+       <Route path='/blog' exact element={<Blog />} />
      </Routes>
+   
     </div>
-    </Router>
   );
 }
 
