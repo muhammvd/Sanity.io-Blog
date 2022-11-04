@@ -20,7 +20,7 @@ const Flex = styled.div`
    width: 90%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 30px;
+   grid-gap: 35px;
 `
 
 const Blog = () => {
@@ -57,7 +57,7 @@ const Blog = () => {
       {posts.map(post => 
          <article  key={post.slug.current}>
            <img style={{width: '380px', height: '200px', objectFit: 'cover'}} src={post.mainImage.asset.url} alt={post.title}/>
-           <h4>{post.title}</h4> 
+           <h4 style={{fontSize:'16px', marginTop:'10px', marginBottom:'10px'}}>{post.title}</h4> 
            <Link to={`/blog/${post.slug.current}`}>Read Full Article</Link>
          </article>      
         )}

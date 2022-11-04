@@ -30,6 +30,7 @@ const ShoeImage = styled.img`
    transition: opacity .2s linear,transform 2s cubic-bezier(.19,1,.22,1);
    top: 20%;
    left: 45%;
+   user-select: none;
 `
 
 const SecondDiv = styled.div`
